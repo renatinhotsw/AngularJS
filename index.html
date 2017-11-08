@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pokedex</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<allow-navigation ="https://pokeapi.co/api/v1/pokedex/1/">
+</head>
+<body ng-app="pokedexApp">
+
+<div class="App">
+	
+	<img rol-on-scroll class="pokeball-back" id="pokeballBack" src="//hanashiro.github.io/pokedex/images/pokeball.svg" alt="">
+	
+	<ng-view></ng-view>
+
+	
+
+
+
+</div>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-route.min.js"></script>
+
+
+<script src="js/app.js"></script>
+<script src="js/controllers/pokedexController.js"></script>
+<script src="js/controllers/pokeInfoController.js"></script>
+<script src="js/components/pokeListItem/pokeListItemComponent.js"></script>
+<script src="js/services/PokeApiFactory.js"></script>
+<script src="js/directives/rolOnScroll.js"></script>
+<script src="js/rotas.js"></script>
+<script src="js/NumberFormatterFilter.js"></script>
+
+
+
+</body>
+</html>
